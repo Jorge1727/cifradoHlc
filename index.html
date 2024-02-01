@@ -3,22 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Cifrado Cesar</title>
 </head>
 <body>
 
 <div class="container">
-    <label for="mensaje">Cuadro de edición del texto original:</label>
-    <input type="text" id="mensaje" size="100"/>
+    <h1>Cifrado César con rotación personalizada</h1>
+    <h2><label for="mensaje">Cuadro de edición del texto original:</label>
+    <input type="text" id="mensaje" size="100"/></h2>
 
-    <p><label for="desplazamiento">Cuadro de edición del valor del desplazamiento:</label>
-    <input type="number" id="desplazamiento" size="4"/></p>
+    <h2><label for="desplazamiento">Cuadro de edición del valor del desplazamiento:</label>
+    <input type="number" id="desplazamiento" size="4"/></h2>
 
     <p><button type="button" id="cifrar">Cifrar</button></p>
     <p><button type="button" id="descifrar">Descifrar</button></p>
 
-    <p><label for="mensaje2">Cuadro de edición del texto cifrado:</label></p>
-    <p><input type="text" id="mensaje2" size="100"/></p>
+    <h2><label for="mensaje2">Mensaje cifrado/descifrado:</label></h2>
+    <p><input type="text" id="mensaje2" size="100" readonly/></p>
 
     <p id="error-message"></p>
 </div>
